@@ -1,0 +1,120 @@
+@charset "UTF-*";
+
+:root {
+    --cor0: #f59392;
+    --cor1: #B80A07;
+    --cor2: #6B0504;
+    --cor3: #780705;
+    --cor4: #520503;
+}
+
+@font-face {
+    font-family: 'valentine';
+    src: url(../fontes/Valentine.otf) format('opentype');
+}
+
+@font-face {
+    font-family: 'amarillo';
+    src: url(../fontes/Amarillo.otf) format('opentype');
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--cor0);
+}
+
+header {
+    height: 150px;
+    text-align: center;
+    color: white;
+    background-image: linear-gradient(to top, var(--cor3), var(--cor1));
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.364);
+}
+
+header h1 {
+    font-family: 'valentine';
+    font-size: 3em;
+    padding-top: 20px;
+    text-shadow: 3px 3px 1px rgba(0, 0, 0, 0.273);
+}
+
+header p {
+    font-size: 0.8em;
+    padding-top: 10px;
+    text-shadow: 3px 3px 1px rgba(0, 0, 0, 0.273);
+}
+
+.marcacao::after {
+    content: '\00A0\2764';
+}
+
+main {
+    padding: 20px;
+    min-width: 320px;
+    max-width: 800px;
+    margin: auto;
+    margin-bottom: 30px;
+    border-radius: 0px 0px 15px 15px;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.415);
+}
+
+main h2 {
+    margin-bottom: 20px;
+    font-family: 'Dancing Script', cursive;
+    text-align: center;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.227);
+}
+
+main img {
+    padding: 5px;
+    max-width: 250px;
+    display: flex;
+    margin: auto;
+    border-radius: 50%;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.495);
+}
+
+
+main p {
+    line-height: 1.5em;
+    text-align: justify;
+    padding: 50px;
+    text-indent: 2em;
+}
+
+.marcacao {
+    color: var(--cor2);
+    background-color: var(--cor0);
+}
+
+div {
+    padding: 20px;
+    background-color: #520503;
+}
+
+video {
+    width: 250px;
+    display: flex;
+    margin: auto;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.491);
+}
+
+div > p {
+    text-align: center;
+    font-size: 1.5em;
+    color: white;
+    text-decoration: underline;
+    font-weight: bolder;
+    margin: 0px;
+    padding-bottom: 0px;
+}
+
